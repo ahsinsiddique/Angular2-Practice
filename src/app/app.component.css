@@ -1,0 +1,15 @@
+.border{
+  border: 3px solid blue;
+}
+.background{
+  background-color: red;
+
+}
+div{
+  width: 400px;
+  height: 200px;
+}
+
+.makeC{
+  color: yellow;
+}

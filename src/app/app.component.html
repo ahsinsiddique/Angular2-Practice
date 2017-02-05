@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+
+<h1>hi</h1>
+<h2 [ngStyle]="{'background-color': 'yellow'}">going to home</h2>
+
+<div [ngClass]="{border:true, background:true}">
+</div>
+
+<div [appHightlight]="'red'" [defaultColor]="'yellow'"> Hover ON Me And See Magic</div>
+
+<h2>*ngIf</h2>
+<h3 *ngIf="switch">By Clicking Button will Hide this Text</h3>
+
+<button (click)="onSwitch()">Click On Button</button>
+
+<h4>*ng For</h4>
+<ul>
+<li *ngFor="let item of ahsan">{{item}}</li>
+</ul>
+
+<br><br><br><br><br><br><br><br>
+<h1>AngularSwitch Directive</h1>
+
+<div [ngSwitch]="val1">
+  <p *ngSwitchCase="10">10</p>
+  <p *ngSwitchCase="100">100</p>
+  <p *ngSwitchDefault>Default</p>
+
+</div>
+
+<h3>For Debugging Mode </h3>
+<ul>
+  <li *ngFor="let item of data1">{{item}}</li>
+</ul>
