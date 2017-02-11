@@ -1,25 +1,31 @@
+<div class="container">
+  <div class="row">
+    <hr class="col-xs-10">
+    <h1>Routing :</h1>
+    <a [routerLink]="['']"><h1>Home</h1></a>
+    <a [routerLink]="['user']"><h1>User</h1></a>
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
-<h1>hi</h1>
-<h2 [ngStyle]="{'background-color': 'yellow'}">going to home</h2>
+
+
+
+
+
+
+<h4 [ngStyle]="{'background-color': 'yellow'}">going to home</h4>
 
 <div [ngClass]="{border:true, background:true}">
 </div>
 
 <div [appHightlight]="'red'" [defaultColor]="'yellow'"> Hover ON Me And See Magic</div>
 
-<h2>*ngIf</h2>
+<h5>*ngIf</h5>
 <h3 *ngIf="switch">By Clicking Button will Hide this Text</h3>
 
 <button (click)="onSwitch()">Click On Button</button>
-
-<h4>*ng For</h4>
-<ul>
-<li *ngFor="let item of ahsan">{{item}}</li>
-</ul>
-
-<br><br><br><br><br><br><br><br>
-<h1>AngularSwitch Directive</h1>
-
+<br>
 <div [ngSwitch]="val1">
   <p *ngSwitchCase="10">10</p>
   <p *ngSwitchCase="100">100</p>
@@ -31,3 +37,4 @@
 <ul>
   <li *ngFor="let item of data1">{{item}}</li>
 </ul>
+

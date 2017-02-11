@@ -25,10 +25,10 @@ export class AppComponent implements OnInit{
     this.switch=!this.switch;
   }
   private ahsan=[1, 2, 3, 4, 5];
- private val1=100;
+  private val1=100;
   onSelect(str:string){
     this.logService.addData(str);
   }
-  
+
 
 }
